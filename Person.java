@@ -1,14 +1,23 @@
 
 public class Person {
     private String name;
-    //private int age;
-    //private Person father;
-    //private Person mother;
+    private Person next;
+
     public Person (String myName)
     {
         name = myName;
-        //age = myAge;
-        //father = myFather;
-        //mother = myMother;
+        //next = null;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public Person getNext()
+    {
+        return next;
+    }
+    public void setNext(Person myPerson)
+    {
+        next = myPerson;
     }
 }
